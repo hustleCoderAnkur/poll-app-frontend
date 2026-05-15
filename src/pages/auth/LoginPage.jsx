@@ -41,7 +41,7 @@ const LoginPage = () => {
     const handleGoogleLogin = () => {
 
         window.location.href =
-            "http://localhost:3000/api/v1/oauth/google"
+            "https://poll-app-backend-n08j.onrender.com/api/v1/oauth/google"
     }
     
     const inputClass = (hasError) => `

@@ -1,10 +1,10 @@
 // constants.js
 
 export const API_BASE_URL =
-    "http://localhost:3000/api/v1";
+    import.meta.env.VITE_API_URL;
 
 export const SOCKET_URL =
-    "http://localhost:3000";
+    import.meta.env.VITE_SOCKET_URL;
 
 export const POLL_STATUS = {
     DRAFT: "draft",
@@ -13,6 +13,7 @@ export const POLL_STATUS = {
 
 export const RESPONSE_TYPE = {
     ANONYMOUS: "anonymous",
+
     AUTHENTICATED:
         "authenticated",
 };
