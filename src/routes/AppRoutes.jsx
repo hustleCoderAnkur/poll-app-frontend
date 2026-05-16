@@ -14,6 +14,7 @@ import NotFoundPage from "../pages/NotFoundPage.jsx";
 
 import LoginPage from "../pages/auth/LoginPage.jsx";
 import RegisterPage from "../pages/auth/RegisterPage.jsx";
+import OAuthSuccessPage from "../pages/auth/OAuthSuccessPage.jsx";
 
 import DashboardPage from "../pages/dashboard/DashboardPage.jsx";
 import CreatePollPage from "../pages/dashboard/CreatePollPage.jsx";
@@ -45,6 +46,11 @@ const AppRoutes = () => {
                     <Route
                         path="/register"
                         element={<RegisterPage />}
+                    />
+
+                    <Route
+                        path="/oauth-success"
+                        element={<OAuthSuccessPage />}
                     />
 
                     <Route
