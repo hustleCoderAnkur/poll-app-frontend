@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+
 import {
     useNavigate,
     useSearchParams,
@@ -9,7 +10,8 @@ const OAuthSuccessPage = () => {
     const navigate =
         useNavigate();
 
-    const [searchParams] = useSearchParams();
+    const [searchParams] =
+        useSearchParams();
 
     useEffect(() => {
 
@@ -26,6 +28,7 @@ const OAuthSuccessPage = () => {
             );
 
             navigate("/dashboard");
+
         } else {
 
             navigate("/login");
